@@ -1,7 +1,7 @@
 # Introduction
 ![Reinforcement Learning Paradigm](https://www.kdnuggets.com/images/reinforcement-learning-fig1-700.jpg "Reinforcement Learning Paradigm")
 
-Reinforcement Learning is a paradigm for teaching computers to make a sequence of decisions. An [agent](#Agent) makes decision within an [environment](#Environment). Every [timestep](#Timestep), the agent observes the current [state](#State), and chooses an [action](#Action) using its [policy](#Policy). The agent then receives a [reward](#Reward) and the environment transitions to the next state. The goal of the agent is to learn a policy that maximize expected total reward.
+Reinforcement Learning is a paradigm for teaching computers to make a sequence of decisions. An [agent](#Agent) makes decision within an [environment](#Environment). Every [timestep](#timestep), the agent observes the current [state](#State), and chooses an [action](#Action) using its [policy](#Policy). The agent then receives a [reward](#Reward) and the environment transitions to the next state. The goal of the agent is to learn a policy that maximize expected total reward.
 
 # Some Useful Terms
 ### Action
