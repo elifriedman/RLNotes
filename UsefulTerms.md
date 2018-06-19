@@ -19,6 +19,11 @@ A number of Reinforcement Learning algorithms collect experiences. That is, ever
 ### Multi-task learning / Multi-objective Learning
 If, instead of one [reward](#reward), the agent is given a bunch of rewards. For example, if you want to get home, you can either get home quickly (minimize travel time) or get home inexpensively (minimize cost). The agent can be given those two objectives and depending on which is more important, the solution will be different (minimize travel time --> take a taxi, minimize cost --> take a bus)
 
+### Off Policy / On Policy
+On-Policy Reinforcement Learning algorithms work by using a policy to interact with the environment (i.e. to make decisions) and trying to improve that same policy. The agent will use its policy to make a decision, it will receive a reward, and then it will try to improve its policy.
+
+Off-Policy Reinforcement Learning algorithms use two different policies. The agent uses the _behaviour policy_ to make decisions, and then tries to improve the _target policy_. The agent will use the behaviour policy to make a decision, it will receive a reward, and then it will try to improve its target policy. Note that the behaviour policy typically stays the same throughout the learning.
+
 ### Policy
 A policy is a way of making decisions. Given a [state](#state), a policy will output an [action](#a#tion). For example, if you're nearing a stoplight, one possible policy would be
 
