@@ -37,5 +37,5 @@ Teaching an [agent](#Agent) to make a sequence of decisions that will maximize a
 ### State
 The state consists of all the information about the [environment](#Environment) at the current moment. The state of a simple wheeled robot might consist of the current position of the robot and the current velocity of the robot. If you're sitting at a stop light and the only question is whether to go or not, the state would consist of the color of the light. 
 
-### Timestep
+# Timestep
 Typically, in RL, we assume that time moves in discrete steps. Every timestep, the [agent](#Agent) can decide what it wants to do and the environment will react.
