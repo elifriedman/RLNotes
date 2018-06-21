@@ -22,7 +22,9 @@ If, instead of one [reward](#reward), the agent is given a bunch of rewards. For
 ### Off Policy / On Policy
 On-Policy Reinforcement Learning algorithms work by using a policy to interact with the environment (i.e. to make decisions) and trying to improve that same policy. The agent will use its policy to make a decision, it will receive a reward, and then it will try to improve its policy.
 
-Off-Policy Reinforcement Learning algorithms use two different policies. The agent uses the _behaviour policy_ to make decisions, and then tries to improve the _target policy_. The agent will use the behaviour policy to make a decision, it will receive a reward, and then it will try to improve its target policy. Note that the behaviour policy typically stays the same throughout the learning.
+Off-Policy Reinforcement Learning algorithms use two different policies. The agent uses the _behaviour policy_ to make decisions, and then tries to improve the _target policy_. The process is as follows: the agent will use the behaviour policy to make a decision, it will receive a reward, and then it will try to improve its target policy. Note that the behaviour policy typically stays the same throughout the learning.
+
+Off policy learning is useful in a number of scenarios. For example, if you want the agent to explore the environment while training, but when it's actually running, you don't want it experimenting at all. You would have a behaviour policy that can explore the environment, but the target policy would just execute the best action possible. Another scenario is if you have example data, e.g. from a human. In this case, the behaviour policy is the set of human's actions. But you want to train a computer to do the same thing, so you would train a target policy.
 
 ### Policy
 A policy is a way of making decisions. Given a [state](#state), a policy will output an [action](#a#tion). For example, if you're nearing a stoplight, one possible policy would be
