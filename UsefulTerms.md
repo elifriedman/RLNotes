@@ -60,4 +60,4 @@ The state consists of all the information about the [environment](#environment) 
 Typically, in RL, we assume that time moves in discrete steps. Every timestep, the [agent](#agent) can decide what it wants to do and the environment will react.
 
 ### Value Function
-The expected total amount of [reward](#reward) the agent will receive if it starts from a given [state](#state). 
+The expected total amount of [reward](#reward) the agent will receive in the future if it starts from a given [state](#state). 
